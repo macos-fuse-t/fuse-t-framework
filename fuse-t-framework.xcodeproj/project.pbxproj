@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA56806129AA0D2300269758 /* fuse_t.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56806029AA0D2300269758 /* fuse_t.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA56806A29AA0F1900269758 /* fuse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56806929AA0F1900269758 /* fuse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA56806C29AA0F2600269758 /* fuse_common.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56806B29AA0F2600269758 /* fuse_common.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA56806F29AA0F3400269758 /* fuse_common_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56806D29AA0F3400269758 /* fuse_common_compat.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA56807029AA0F3400269758 /* fuse_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56806E29AA0F3400269758 /* fuse_compat.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA56807429AA0F4D00269758 /* fuse_lowlevel.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56807129AA0F4D00269758 /* fuse_lowlevel.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA56807529AA0F4D00269758 /* fuse_lowlevel_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56807229AA0F4D00269758 /* fuse_lowlevel_compat.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA56807629AA0F4D00269758 /* fuse_opt.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56807329AA0F4D00269758 /* fuse_opt.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA56807729AA0F6600269758 /* fuse_common_compat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA56806D29AA0F3400269758 /* fuse_common_compat.h */; };
+		AA56807829AA0F6600269758 /* fuse_lowlevel_compat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA56807229AA0F4D00269758 /* fuse_lowlevel_compat.h */; };
+		AA56807929AA0F6600269758 /* fuse_lowlevel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA56807129AA0F4D00269758 /* fuse_lowlevel.h */; };
+		AA56807A29AA0F6600269758 /* fuse_opt.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA56807329AA0F4D00269758 /* fuse_opt.h */; };
+		AA56807B29AA0F6600269758 /* fuse_compat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA56806E29AA0F3400269758 /* fuse_compat.h */; };
+		AA56807C29AA0F6600269758 /* fuse_common.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA56806B29AA0F2600269758 /* fuse_common.h */; };
+		AA56807D29AA0F6600269758 /* fuse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA56806929AA0F1900269758 /* fuse.h */; };
+		AA56809529AA126F00269758 /* fuse_signals.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56807F29AA126F00269758 /* fuse_signals.c */; };
+		AA56809629AA126F00269758 /* fuse_kernel.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56808029AA126F00269758 /* fuse_kernel.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA56809729AA126F00269758 /* helper.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56808129AA126F00269758 /* helper.c */; };
+		AA56809829AA126F00269758 /* mount_darwin.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56808229AA126F00269758 /* mount_darwin.c */; };
+		AA56809929AA126F00269758 /* fuse_loop_mt.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56808329AA126F00269758 /* fuse_loop_mt.c */; };
+		AA56809B29AA126F00269758 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56808529AA126F00269758 /* buffer.c */; };
+		AA56809D29AA126F00269758 /* fuse_kern_chan.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56808729AA126F00269758 /* fuse_kern_chan.c */; };
+		AA56809E29AA126F00269758 /* fuse_session.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56808829AA126F00269758 /* fuse_session.c */; };
+		AA56809F29AA126F00269758 /* fuse_darwin.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56808929AA126F00269758 /* fuse_darwin.c */; };
+		AA5680A029AA126F00269758 /* fuse.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56808A29AA126F00269758 /* fuse.c */; };
+		AA5680A129AA126F00269758 /* fuse_opt.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56808B29AA126F00269758 /* fuse_opt.c */; };
+		AA5680A329AA126F00269758 /* cuse_lowlevel.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56808D29AA126F00269758 /* cuse_lowlevel.c */; };
+		AA5680A429AA126F00269758 /* fuse_mt.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56808E29AA126F00269758 /* fuse_mt.c */; };
+		AA5680A629AA126F00269758 /* fuse_loop.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56809029AA126F00269758 /* fuse_loop.c */; };
+		AA5680A729AA126F00269758 /* fuse_misc.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56809129AA126F00269758 /* fuse_misc.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA5680A829AA126F00269758 /* fuse_darwin_private.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56809229AA126F00269758 /* fuse_darwin_private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA5680A929AA126F00269758 /* fuse_lowlevel.c in Sources */ = {isa = PBXBuildFile; fileRef = AA56809329AA126F00269758 /* fuse_lowlevel.c */; };
+		AA5680AA29AA126F00269758 /* fuse_i.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56809429AA126F00269758 /* fuse_i.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA5680AC29AA128400269758 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5680AB29AA128300269758 /* config.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA5680AE29AA179900269758 /* cuse_lowlevel.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5680AD29AA179900269758 /* cuse_lowlevel.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA5680B129AA1FDE00269758 /* DiskArbitration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5680B029AA1FDE00269758 /* DiskArbitration.framework */; };
+		AA5680B329AA1FFF00269758 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5680B229AA1FFF00269758 /* CoreFoundation.framework */; };
+		AA5680B629AA242D00269758 /* go-nfsv4 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA5680B529AA242D00269758 /* go-nfsv4 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AA5680B829AA259A00269758 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = AA5680B729AA259A00269758 /* init.c */; };
+		AA5680C029AA275E00269758 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AA5680BF29AA275E00269758 /* main.c */; };
+		AA5680C429AA280400269758 /* fuse_t.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA56805D29AA0D2300269758 /* fuse_t.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA56806729AA0DDE00269758 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers;
+			dstSubfolderSpec = 1;
+			files = (
+				AA56807729AA0F6600269758 /* fuse_common_compat.h in CopyFiles */,
+				AA56807829AA0F6600269758 /* fuse_lowlevel_compat.h in CopyFiles */,
+				AA56807929AA0F6600269758 /* fuse_lowlevel.h in CopyFiles */,
+				AA56807A29AA0F6600269758 /* fuse_opt.h in CopyFiles */,
+				AA56807B29AA0F6600269758 /* fuse_compat.h in CopyFiles */,
+				AA56807C29AA0F6600269758 /* fuse_common.h in CopyFiles */,
+				AA56807D29AA0F6600269758 /* fuse.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5680B429AA240200269758 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				AA5680B629AA242D00269758 /* go-nfsv4 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5680BB29AA275E00269758 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA56805D29AA0D2300269758 /* fuse_t.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fuse_t.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA56806029AA0D2300269758 /* fuse_t.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fuse_t.h; sourceTree = "<group>"; };
+		AA56806929AA0F1900269758 /* fuse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fuse.h; path = ../../../libfuse/include/fuse.h; sourceTree = "<group>"; };
+		AA56806B29AA0F2600269758 /* fuse_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fuse_common.h; path = ../../../libfuse/include/fuse_common.h; sourceTree = "<group>"; };
+		AA56806D29AA0F3400269758 /* fuse_common_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fuse_common_compat.h; path = ../../../libfuse/include/fuse_common_compat.h; sourceTree = "<group>"; };
+		AA56806E29AA0F3400269758 /* fuse_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fuse_compat.h; path = ../../../libfuse/include/fuse_compat.h; sourceTree = "<group>"; };
+		AA56807129AA0F4D00269758 /* fuse_lowlevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fuse_lowlevel.h; path = ../../../libfuse/include/fuse_lowlevel.h; sourceTree = "<group>"; };
+		AA56807229AA0F4D00269758 /* fuse_lowlevel_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fuse_lowlevel_compat.h; path = ../../../libfuse/include/fuse_lowlevel_compat.h; sourceTree = "<group>"; };
+		AA56807329AA0F4D00269758 /* fuse_opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fuse_opt.h; path = ../../../libfuse/include/fuse_opt.h; sourceTree = "<group>"; };
+		AA56807F29AA126F00269758 /* fuse_signals.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fuse_signals.c; path = ../../../libfuse/lib/fuse_signals.c; sourceTree = "<group>"; };
+		AA56808029AA126F00269758 /* fuse_kernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fuse_kernel.h; path = ../../../libfuse/include/fuse_kernel.h; sourceTree = "<group>"; };
+		AA56808129AA126F00269758 /* helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = helper.c; path = ../../../libfuse/lib/helper.c; sourceTree = "<group>"; };
+		AA56808229AA126F00269758 /* mount_darwin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mount_darwin.c; path = ../../../libfuse/lib/mount_darwin.c; sourceTree = "<group>"; };
+		AA56808329AA126F00269758 /* fuse_loop_mt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fuse_loop_mt.c; path = ../../../libfuse/lib/fuse_loop_mt.c; sourceTree = "<group>"; };
+		AA56808529AA126F00269758 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = buffer.c; path = ../../../libfuse/lib/buffer.c; sourceTree = "<group>"; };
+		AA56808729AA126F00269758 /* fuse_kern_chan.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fuse_kern_chan.c; path = ../../../libfuse/lib/fuse_kern_chan.c; sourceTree = "<group>"; };
+		AA56808829AA126F00269758 /* fuse_session.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fuse_session.c; path = ../../../libfuse/lib/fuse_session.c; sourceTree = "<group>"; };
+		AA56808929AA126F00269758 /* fuse_darwin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fuse_darwin.c; path = ../../../libfuse/lib/fuse_darwin.c; sourceTree = "<group>"; };
+		AA56808A29AA126F00269758 /* fuse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fuse.c; path = ../../../libfuse/lib/fuse.c; sourceTree = "<group>"; };
+		AA56808B29AA126F00269758 /* fuse_opt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fuse_opt.c; path = ../../../libfuse/lib/fuse_opt.c; sourceTree = "<group>"; };
+		AA56808D29AA126F00269758 /* cuse_lowlevel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cuse_lowlevel.c; path = ../../../libfuse/lib/cuse_lowlevel.c; sourceTree = "<group>"; };
+		AA56808E29AA126F00269758 /* fuse_mt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fuse_mt.c; path = ../../../libfuse/lib/fuse_mt.c; sourceTree = "<group>"; };
+		AA56809029AA126F00269758 /* fuse_loop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fuse_loop.c; path = ../../../libfuse/lib/fuse_loop.c; sourceTree = "<group>"; };
+		AA56809129AA126F00269758 /* fuse_misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fuse_misc.h; path = ../../../libfuse/lib/fuse_misc.h; sourceTree = "<group>"; };
+		AA56809229AA126F00269758 /* fuse_darwin_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fuse_darwin_private.h; path = ../../../libfuse/lib/fuse_darwin_private.h; sourceTree = "<group>"; };
+		AA56809329AA126F00269758 /* fuse_lowlevel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fuse_lowlevel.c; path = ../../../libfuse/lib/fuse_lowlevel.c; sourceTree = "<group>"; };
+		AA56809429AA126F00269758 /* fuse_i.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fuse_i.h; path = ../../../libfuse/lib/fuse_i.h; sourceTree = "<group>"; };
+		AA5680AB29AA128300269758 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../../../libfuse/include/config.h; sourceTree = "<group>"; };
+		AA5680AD29AA179900269758 /* cuse_lowlevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cuse_lowlevel.h; path = ../../../libfuse/include/cuse_lowlevel.h; sourceTree = "<group>"; };
+		AA5680B029AA1FDE00269758 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = System/Library/Frameworks/DiskArbitration.framework; sourceTree = SDKROOT; };
+		AA5680B229AA1FFF00269758 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AA5680B529AA242D00269758 /* go-nfsv4 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "go-nfsv4"; path = "../go-nfsv4/go-nfsv4"; sourceTree = "<group>"; };
+		AA5680B729AA259A00269758 /* init.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = init.c; sourceTree = "<group>"; };
+		AA5680BD29AA275E00269758 /* TestFramework */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestFramework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5680BF29AA275E00269758 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA56805A29AA0D2300269758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5680B329AA1FFF00269758 /* CoreFoundation.framework in Frameworks */,
+				AA5680B129AA1FDE00269758 /* DiskArbitration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5680BA29AA275E00269758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5680C429AA280400269758 /* fuse_t.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA56805329AA0D2300269758 = {
+			isa = PBXGroup;
+			children = (
+				AA5680B729AA259A00269758 /* init.c */,
+				AA5680B529AA242D00269758 /* go-nfsv4 */,
+				AA56805F29AA0D2300269758 /* fuse-t */,
+				AA5680BE29AA275E00269758 /* TestFramework */,
+				AA56805E29AA0D2300269758 /* Products */,
+				AA5680AF29AA1FDE00269758 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA56805E29AA0D2300269758 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA56805D29AA0D2300269758 /* fuse_t.framework */,
+				AA5680BD29AA275E00269758 /* TestFramework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA56805F29AA0D2300269758 /* fuse-t */ = {
+			isa = PBXGroup;
+			children = (
+				AA56807E29AA121700269758 /* libfuse */,
+				AA56806829AA0ED300269758 /* fuse */,
+				AA56806029AA0D2300269758 /* fuse_t.h */,
+			);
+			path = "fuse-t";
+			sourceTree = "<group>";
+		};
+		AA56806829AA0ED300269758 /* fuse */ = {
+			isa = PBXGroup;
+			children = (
+				AA56806D29AA0F3400269758 /* fuse_common_compat.h */,
+				AA56807229AA0F4D00269758 /* fuse_lowlevel_compat.h */,
+				AA56807129AA0F4D00269758 /* fuse_lowlevel.h */,
+				AA56807329AA0F4D00269758 /* fuse_opt.h */,
+				AA56806E29AA0F3400269758 /* fuse_compat.h */,
+				AA56806B29AA0F2600269758 /* fuse_common.h */,
+				AA56806929AA0F1900269758 /* fuse.h */,
+			);
+			path = fuse;
+			sourceTree = "<group>";
+		};
+		AA56807E29AA121700269758 /* libfuse */ = {
+			isa = PBXGroup;
+			children = (
+				AA5680AB29AA128300269758 /* config.h */,
+				AA5680AD29AA179900269758 /* cuse_lowlevel.h */,
+				AA56808529AA126F00269758 /* buffer.c */,
+				AA56808D29AA126F00269758 /* cuse_lowlevel.c */,
+				AA56809229AA126F00269758 /* fuse_darwin_private.h */,
+				AA56808929AA126F00269758 /* fuse_darwin.c */,
+				AA56809429AA126F00269758 /* fuse_i.h */,
+				AA56808729AA126F00269758 /* fuse_kern_chan.c */,
+				AA56808029AA126F00269758 /* fuse_kernel.h */,
+				AA56808329AA126F00269758 /* fuse_loop_mt.c */,
+				AA56809029AA126F00269758 /* fuse_loop.c */,
+				AA56809329AA126F00269758 /* fuse_lowlevel.c */,
+				AA56809129AA126F00269758 /* fuse_misc.h */,
+				AA56808E29AA126F00269758 /* fuse_mt.c */,
+				AA56808B29AA126F00269758 /* fuse_opt.c */,
+				AA56808829AA126F00269758 /* fuse_session.c */,
+				AA56807F29AA126F00269758 /* fuse_signals.c */,
+				AA56808A29AA126F00269758 /* fuse.c */,
+				AA56808129AA126F00269758 /* helper.c */,
+				AA56808229AA126F00269758 /* mount_darwin.c */,
+			);
+			path = libfuse;
+			sourceTree = "<group>";
+		};
+		AA5680AF29AA1FDE00269758 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA5680B229AA1FFF00269758 /* CoreFoundation.framework */,
+				AA5680B029AA1FDE00269758 /* DiskArbitration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA5680BE29AA275E00269758 /* TestFramework */ = {
+			isa = PBXGroup;
+			children = (
+				AA5680BF29AA275E00269758 /* main.c */,
+			);
+			path = TestFramework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AA56805829AA0D2300269758 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA56806129AA0D2300269758 /* fuse_t.h in Headers */,
+				AA56806A29AA0F1900269758 /* fuse.h in Headers */,
+				AA5680AC29AA128400269758 /* config.h in Headers */,
+				AA56807429AA0F4D00269758 /* fuse_lowlevel.h in Headers */,
+				AA56806C29AA0F2600269758 /* fuse_common.h in Headers */,
+				AA56806F29AA0F3400269758 /* fuse_common_compat.h in Headers */,
+				AA56807029AA0F3400269758 /* fuse_compat.h in Headers */,
+				AA56807629AA0F4D00269758 /* fuse_opt.h in Headers */,
+				AA56807529AA0F4D00269758 /* fuse_lowlevel_compat.h in Headers */,
+				AA5680A729AA126F00269758 /* fuse_misc.h in Headers */,
+				AA56809629AA126F00269758 /* fuse_kernel.h in Headers */,
+				AA5680AA29AA126F00269758 /* fuse_i.h in Headers */,
+				AA5680AE29AA179900269758 /* cuse_lowlevel.h in Headers */,
+				AA5680A829AA126F00269758 /* fuse_darwin_private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AA56805C29AA0D2300269758 /* fuse-t */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA56806429AA0D2300269758 /* Build configuration list for PBXNativeTarget "fuse-t" */;
+			buildPhases = (
+				AA56805829AA0D2300269758 /* Headers */,
+				AA56805929AA0D2300269758 /* Sources */,
+				AA56805A29AA0D2300269758 /* Frameworks */,
+				AA56805B29AA0D2300269758 /* Resources */,
+				AA56806729AA0DDE00269758 /* CopyFiles */,
+				AA5680B429AA240200269758 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "fuse-t";
+			productName = "fuse-t";
+			productReference = AA56805D29AA0D2300269758 /* fuse_t.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA5680BC29AA275E00269758 /* TestFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5680C329AA275E00269758 /* Build configuration list for PBXNativeTarget "TestFramework" */;
+			buildPhases = (
+				AA5680B929AA275E00269758 /* Sources */,
+				AA5680BA29AA275E00269758 /* Frameworks */,
+				AA5680BB29AA275E00269758 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestFramework;
+			productName = TestFramework;
+			productReference = AA5680BD29AA275E00269758 /* TestFramework */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA56805429AA0D2300269758 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AA56805C29AA0D2300269758 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					AA5680BC29AA275E00269758 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = AA56805729AA0D2300269758 /* Build configuration list for PBXProject "fuse-t-framework" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA56805329AA0D2300269758;
+			productRefGroup = AA56805E29AA0D2300269758 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA56805C29AA0D2300269758 /* fuse-t */,
+				AA5680BC29AA275E00269758 /* TestFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA56805B29AA0D2300269758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA56805929AA0D2300269758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5680B829AA259A00269758 /* init.c in Sources */,
+				AA56809F29AA126F00269758 /* fuse_darwin.c in Sources */,
+				AA56809B29AA126F00269758 /* buffer.c in Sources */,
+				AA5680A129AA126F00269758 /* fuse_opt.c in Sources */,
+				AA56809829AA126F00269758 /* mount_darwin.c in Sources */,
+				AA5680A329AA126F00269758 /* cuse_lowlevel.c in Sources */,
+				AA5680A929AA126F00269758 /* fuse_lowlevel.c in Sources */,
+				AA5680A629AA126F00269758 /* fuse_loop.c in Sources */,
+				AA56809D29AA126F00269758 /* fuse_kern_chan.c in Sources */,
+				AA56809529AA126F00269758 /* fuse_signals.c in Sources */,
+				AA56809E29AA126F00269758 /* fuse_session.c in Sources */,
+				AA56809729AA126F00269758 /* helper.c in Sources */,
+				AA5680A029AA126F00269758 /* fuse.c in Sources */,
+				AA56809929AA126F00269758 /* fuse_loop_mt.c in Sources */,
+				AA5680A429AA126F00269758 /* fuse_mt.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5680B929AA275E00269758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5680C029AA275E00269758 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA56806229AA0D2300269758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AA56806329AA0D2300269758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA56806529AA0D2300269758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6DY7Z4SVDZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_CFLAGS = (
+					"-D_FILE_OFFSET_BITS=64",
+					"-DFUSE_USE_VERSION=26",
+					"-D_REENTRANT",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.fuse-t.fuse-t";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		AA56806629AA0D2300269758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6DY7Z4SVDZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_CFLAGS = (
+					"-D_FILE_OFFSET_BITS=64",
+					"-DFUSE_USE_VERSION=26",
+					"-D_REENTRANT",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.fuse-t.fuse-t";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		AA5680C129AA275E00269758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DY7Z4SVDZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-D_FILE_OFFSET_BITS=64",
+					"-DFUSE_USE_VERSION=26",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA5680C229AA275E00269758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DY7Z4SVDZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				OTHER_CFLAGS = (
+					"-D_FILE_OFFSET_BITS=64",
+					"-DFUSE_USE_VERSION=26",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA56805729AA0D2300269758 /* Build configuration list for PBXProject "fuse-t-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA56806229AA0D2300269758 /* Debug */,
+				AA56806329AA0D2300269758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA56806429AA0D2300269758 /* Build configuration list for PBXNativeTarget "fuse-t" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA56806529AA0D2300269758 /* Debug */,
+				AA56806629AA0D2300269758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5680C329AA275E00269758 /* Build configuration list for PBXNativeTarget "TestFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5680C129AA275E00269758 /* Debug */,
+				AA5680C229AA275E00269758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA56805429AA0D2300269758 /* Project object */;
+}
