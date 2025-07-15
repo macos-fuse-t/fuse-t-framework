@@ -13,8 +13,6 @@
  * Copyright (c) 2006-2008 Amit Singh/Google Inc.
  */
 
-#define FUSE_USE_VERSION 26
-
 #define HAVE_SETXATTR    1
 
 #ifdef __APPLE__

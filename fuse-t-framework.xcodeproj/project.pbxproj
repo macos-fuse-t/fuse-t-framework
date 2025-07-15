@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA5184BA2A406BDF00ABBCE0 /* fuse_t.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA56805D29AA0D2300269758 /* fuse_t.framework */; };
 		AA56806129AA0D2300269758 /* fuse_t.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56806029AA0D2300269758 /* fuse_t.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA56806A29AA0F1900269758 /* fuse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56806929AA0F1900269758 /* fuse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA56806C29AA0F2600269758 /* fuse_common.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56806B29AA0F2600269758 /* fuse_common.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -47,7 +48,6 @@
 		AA5680B629AA242D00269758 /* go-nfsv4 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA5680B529AA242D00269758 /* go-nfsv4 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		AA5680B829AA259A00269758 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = AA5680B729AA259A00269758 /* init.c */; };
 		AA5680C029AA275E00269758 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AA5680BF29AA275E00269758 /* main.c */; };
-		AA5680C429AA280400269758 /* fuse_t.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA56805D29AA0D2300269758 /* fuse_t.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -140,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5680C429AA280400269758 /* fuse_t.framework in Frameworks */,
+				AA5184BA2A406BDF00ABBCE0 /* fuse_t.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = NO;
@@ -486,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -516,7 +516,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.0;
 				OTHER_CFLAGS = (
 					"-D_FILE_OFFSET_BITS=64",
@@ -551,7 +551,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.0;
 				OTHER_CFLAGS = (
 					"-D_FILE_OFFSET_BITS=64",
@@ -571,7 +571,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6DY7Z4SVDZ;
 				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-D_FILE_OFFSET_BITS=64",
@@ -587,7 +587,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6DY7Z4SVDZ;
 				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = (
 					"-D_FILE_OFFSET_BITS=64",
 					"-DFUSE_USE_VERSION=26",
